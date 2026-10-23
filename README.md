@@ -8,6 +8,16 @@ on 4,782 unseen loads.
 
 ## Quick start
 
+### Run it in Colab (no install)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fajarsetiawan17/freight-rate-ml/blob/master/report/Freight_Rate_Walkthrough.ipynb)
+
+`report/Freight_Rate_Walkthrough.ipynb` clones this repo, runs the full pipeline and the official
+scorer, and renders both submission files — about 3 minutes on a free CPU. Nothing is
+re-implemented; every cell calls the submitted source.
+
+### Run it locally
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
