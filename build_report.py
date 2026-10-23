@@ -86,7 +86,7 @@ h("1. Executive summary", 1)
 h_ = S["holdout"]
 body(
     f"Posted rate is almost deterministic given distance: correlation of log(rate) with log(distance) is 0.99, "
-    f"and a gradient-boosted model on nine structural features reaches a holdout MAE of ${h_['MAE']:.0f} "
+    f"and a gradient-boosted model on ten structural features reaches a holdout MAE of ${h_['MAE']:.0f} "
     f"and MAPE of {h_['MAPE']:.2f}% on unseen October loads. Two of the supplied columns — market_index and "
     f"quote_signal — are actively harmful out of time: adding them to the model raises holdout MAE from "
     f"${AB.loc[2, 'MAE']:.0f} to ${AB.loc[3, 'MAE']:.0f}. Both are level-shifted between the development "

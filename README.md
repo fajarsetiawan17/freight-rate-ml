@@ -38,7 +38,7 @@ scorer_results/             candidate_december.png
 
 Rate is nearly a pure function of distance (corr of logs = 0.99), so the model
 only has to learn level corrections on top of it. LightGBM with an L1 objective
-on `log(rate)`, nine features — log distance, log weight, equipment, origin,
+on `log(rate)`, ten features — log distance, log weight, equipment, origin,
 destination, midpoint lat/lon, north–south and east–west deltas, day of week.
 Validation is rolling-origin, three expanding-window folds each predicting one
 unseen future month, because the real submission is a two-month forward forecast
